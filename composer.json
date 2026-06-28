@@ -1,0 +1,35 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "alpheus/mago",
+    "description": "A shareable Mago configuration",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": [
+        "mago",
+        "configuration",
+        "config",
+        "php"
+    ],
+    "homepage": "https://github.com/alpheuscfg/mago",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alpheus",
+            "email": "contact@alphe.us"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/alpheuscfg/mago/issues",
+        "source": "https://github.com/alpheuscfg/mago",
+        "docs": "https://github.com/alpheuscfg/mago/blob/main/docs/README.md"
+    },
+    "require-dev": {
+        "carthage-software/mago": "1.40.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "carthage-software/mago": true
+        }
+    }
+}
