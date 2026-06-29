@@ -5,9 +5,7 @@ php-version = "8.4"
 
 [source]
 workspace = "."
-includes = [
-    "./vendor",
-]
+includes = ["./vendor"]
 
 [formatter]
 print-width = 80
@@ -19,9 +17,7 @@ trailing-comma = true
 remove-trailing-close-tag = true
 
 [linter]
-integrations = [
-    "phpunit",
-]
+integrations = ["phpunit"]
 
 [linter.rules]
 # Best Practices
@@ -154,9 +150,7 @@ sensitive-parameter = { enabled = true }
 tainted-data-to-sink = { enabled = true }
 
 [analyzer]
-excludes = [
-    "./vendor",
-]
+excludes = ["./vendor"]
 find-unused-expressions = true
 find-unused-definitions = true
 analyze-dead-code = true

@@ -19,3 +19,7 @@
 /composer.lock export-ignore
 /CONTRIBUTING.md export-ignore
 /justfile export-ignore
+/oxfmt.config.ts export-ignore
+/package.json export-ignore
+/pnpm-lock.yaml export-ignore
+/pnpm-workspace.yaml export-ignore

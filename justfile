@@ -2,6 +2,7 @@ set shell := ["bash", "-cu"]
 set windows-shell := ["pwsh", "-Command"]
 
 composer := "$(which composer.phar)"
+oxfmt := "pnpm exec oxfmt"
 
 vendor_bin := "vendor/bin/"
 mago := vendor_bin + "mago"
@@ -13,6 +14,7 @@ _:
 # Install dependencies
 i:
     {{composer}} install
+    pnpm install
 
 # Update dependencies
 up:
@@ -20,7 +22,7 @@ up:
 
 # Format code
 fmt:
-    ./{{mago}} format
+    {{oxfmt}}
 
 # Lint code with ls-lint
 ls-lint:
@@ -37,20 +39,12 @@ typos:
 lint:
     ./{{mago}} lint --unsafe --fix
 
-# Analyze code
-analyze:
-    ./{{mago}} analyze --unsafe --fix
-
 # Check code
-check:
-    just fmt
-    just ls-lint
-    just typos
-    just lint
-    just analyze
+check: fmt ls-lint typos lint
 
 # Clean (Linux)
 clean-linux:
+    rm -rf ./node_modules
     rm -rf ./vendor
 
 # Clean (macOS)
@@ -59,6 +53,7 @@ clean-macos:
 
 # Clean (Windows)
 clean-windows:
+    if (Test-Path "./node_modules") { Remove-Item -Recurse -Force "./node_modules" }
     if (Test-Path "./vendor") { Remove-Item -Recurse -Force "./vendor" }
 
 # Clean

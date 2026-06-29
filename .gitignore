@@ -2,5 +2,8 @@
 __MACOSX/
 .DS_Store
 
+# Modules
+node_modules/
+
 # Composer
 vendor/
