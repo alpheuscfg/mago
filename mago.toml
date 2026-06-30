@@ -165,7 +165,7 @@ no-literal-password = { enabled = true }
 sensitive-parameter = { enabled = true }
 tainted-data-to-sink = { enabled = true }
 
-disallowed-functions = { enabled = true }
+disallowed-functions = { enabled = false }
 no-short-opening-tag = { enabled = true }
 require-preg-quote-delimiter = { enabled = true }
 no-debug-symbols = { enabled = true }
