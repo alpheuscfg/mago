@@ -202,9 +202,6 @@ invalid-open-tag = { enabled = true }
 
 [analyzer]
 
-# General options
-excludes = ["./vendor"]
-
 # Feature flags
 find-unused-expressions = true
 find-unused-definitions = true
