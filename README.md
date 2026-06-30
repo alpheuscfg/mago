@@ -23,6 +23,21 @@ paths = [
 ]
 ```
 
+Or go with different presets:
+
+```toml
+extends = [
+    "vendor/alpheus/mago",
+    "vendor/alpheus/mago/presets/psl",
+    "vendor/alpheus/mago/presets/phpunit",
+]
+
+[source]
+paths = [
+    "./src",
+]
+```
+
 ## License
 
 This project is licensed under the terms of the MIT license.

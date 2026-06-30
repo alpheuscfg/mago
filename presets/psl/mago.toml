@@ -1,0 +1,23 @@
+#:schema https://mago.carthage.software/1.42.0/schema.json
+
+[linter]
+integrations = ["psl"]
+
+[linter.rules]
+
+# Best Practices
+psl-output = { enabled = true }
+
+psl-array-functions = { enabled = true }
+psl-data-structures = { enabled = true }
+psl-datetime = { enabled = true }
+psl-math-functions = { enabled = true }
+psl-randomness-functions = { enabled = true }
+psl-regex-functions = { enabled = true }
+psl-sleep-functions = { enabled = true }
+psl-string-functions = { enabled = true }
+
+[analyzer]
+
+# Plugins
+plugins = ["psl"]

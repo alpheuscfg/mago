@@ -1,0 +1,16 @@
+#:schema https://mago.carthage.software/1.42.0/schema.json
+
+[linter]
+integrations = ["phpunit"]
+
+[linter.rules]
+
+# Best Practices
+prefer-test-attribute = { enabled = true }
+
+# Consistency
+assertion-style = { enabled = true }
+
+# Correctness
+strict-assertions = { enabled = true }
+use-specific-assertions = { enabled = true }
