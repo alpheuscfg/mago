@@ -1,7 +1,6 @@
 #:schema https://mago.carthage.software/1.42.0/schema.json
 
 version = "1"
-php-version = "8.4"
 
 [source]
 workspace = "."
