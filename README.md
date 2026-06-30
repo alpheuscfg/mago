@@ -7,7 +7,7 @@ A shareable Mago configuration.
 Install these packages as a dev dependencies in the project:
 
 ```sh
-composer rerquire alpheus/mago
+composer require --dev alpheus/mago carthage-software/mago
 ```
 
 ## Usage
