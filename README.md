@@ -15,11 +15,16 @@ composer require --dev alpheus/mago carthage-software/mago
 Implement the configuration into `mago.toml`:
 
 ```toml
-extends = "vendor/alpheus/mago"
+extends = "./vendor/alpheus/mago"
 
 [source]
 paths = [
     "./src",
+]
+
+[analyzer]
+excludes = [
+    "./vendor",
 ]
 ```
 
@@ -27,14 +32,19 @@ Or go with different presets:
 
 ```toml
 extends = [
-    "vendor/alpheus/mago",
-    "vendor/alpheus/mago/presets/psl",
-    "vendor/alpheus/mago/presets/phpunit",
+    "./vendor/alpheus/mago",
+    "./vendor/alpheus/mago/presets/psl",
+    "./vendor/alpheus/mago/presets/phpunit",
 ]
 
 [source]
 paths = [
     "./src",
+]
+
+[analyzer]
+excludes = [
+    "./vendor",
 ]
 ```
 
